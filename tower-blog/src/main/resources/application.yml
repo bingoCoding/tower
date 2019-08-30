@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: blog
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
+    default-property-inclusion: non_null
+  profiles:
+    active: dev
+  servlet:
+    multipart:
+      max-request-size: 100MB
+      max-file-size: 20MB
+
+server:
+  port: 8081
+
+logging:
+  level:
+    tk.mybatis: DEBUG
+    com.cmp.*: DEBUG
